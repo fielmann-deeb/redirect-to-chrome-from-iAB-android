@@ -39,7 +39,8 @@
   <script>
     const openCurrentLinkInChrome = function () {
       window.open(
-        "googlechrome://navigate?url=" + window.location.href,
+        "googlechrome://navigate?url=" +
+          encodeURIComponent(window.location.href),
         "_system"
       );
     };
