@@ -8,8 +8,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // const chromeBtn = document.getElementById("open-in-chrome-btn");
   // chromeBtn.addEventListener("click", openCurrentLinkInChrome);
 
-  const intentAnchor = document.getElementById("open-in-chrome-intent");
-  intentAnchor.href =
+  const chromeIntentAnchor = document.getElementById("open-in-chrome-intent");
+  chromeIntentAnchor.href =
+    "intent://" +
+    window.location.host +
+    window.location.pathname +
+    "#Intent;scheme=http;package=com.android.chrome;end";
+
+  const chooseBrowserIntentAnchor = document.getElementById(
+    "choose-your-browser-intent"
+  );
+  chooseBrowserIntentAnchor.href =
     "intent://" +
     window.location.host +
     window.location.pathname +
