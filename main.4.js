@@ -5,8 +5,8 @@ const openCurrentLinkInChrome = function () {
   );
 };
 document.addEventListener("DOMContentLoaded", function (event) {
-  const chromeBtn = document.getElementById("open-in-chrome-btn");
-  chromeBtn.addEventListener("click", openCurrentLinkInChrome);
+  // const chromeBtn = document.getElementById("open-in-chrome-btn");
+  // chromeBtn.addEventListener("click", openCurrentLinkInChrome);
 
   const intentAnchor = document.getElementById("open-in-chrome-intent");
   intentAnchor.href =
