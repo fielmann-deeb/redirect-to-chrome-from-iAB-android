@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   intentAnchor.href =
     "intent://" +
     window.location.host +
-    window.location.search +
+    window.location.pathname +
     "#Intent;scheme=http;action=android.intent.action.VIEW;end;";
 });
