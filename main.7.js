@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   chromeIntentAnchor.href =
     "intent://" +
     window.location.href.replace("https://", "") +
-    "#Intent;scheme=http;package=com.android.chrome;end";
+    "#Intent;scheme=https;package=com.android.chrome;end";
 
   const chooseBrowserIntentAnchor = document.getElementById(
     "choose-your-browser-intent"
