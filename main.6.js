@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const chromeIntentAnchor = document.getElementById("open-in-chrome-intent");
   chromeIntentAnchor.href =
     "intent://" +
-    window.location.host +
-    window.location.pathname +
+    window.location.href.replace("https://", "") +
     "#Intent;scheme=http;package=com.android.chrome;end";
 
   const chooseBrowserIntentAnchor = document.getElementById(
